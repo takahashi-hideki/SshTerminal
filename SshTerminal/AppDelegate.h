@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class AccessViewController;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UIWindow* window;
+    UINavigationController* navigationController;
+    AccessViewController* viewController;
+}
+
 
 @end

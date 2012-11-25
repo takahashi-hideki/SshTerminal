@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551C882A1657971700FB527E /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C88291657971700FB527E /* libssh2.a */; };
+		551C882C1657973600FB527E /* libgcrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C882B1657973600FB527E /* libgcrypt.a */; };
+		551C882E1657974800FB527E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C882D1657974800FB527E /* libssl.a */; };
+		551C88301657976100FB527E /* libgpg-error.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C882F1657976100FB527E /* libgpg-error.a */; };
+		551C88321657978A00FB527E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551C88311657978A00FB527E /* libcrypto.a */; };
+		FE106D0B161A69C400E95F26 /* ssh_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = FE106D0A161A69C400E95F26 /* ssh_debug.c */; };
+		FE106D11161AD33D00E95F26 /* data_access_controller.c in Sources */ = {isa = PBXBuildFile; fileRef = FE106D10161AD33D00E95F26 /* data_access_controller.c */; };
+		FE4CD4CE1630D5CC0095D13E /* TerminalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CD4CD1630D5CC0095D13E /* TerminalLog.m */; };
+		FE4CD4D41630E0D60095D13E /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CD4D31630E0D60095D13E /* Queue.m */; };
+		FE4CD4D91630E7F70095D13E /* string_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = FE4CD4D81630E7F70095D13E /* string_misc.c */; };
+		FEE8CFE316363B52006896F6 /* memoryDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE8CFE216363B51006896F6 /* memoryDebug.m */; };
 		FEECD118161182DA00EE229E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD117161182DA00EE229E /* UIKit.framework */; };
 		FEECD11A161182DA00EE229E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD119161182DA00EE229E /* Foundation.framework */; };
 		FEECD11C161182DA00EE229E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD11B161182DA00EE229E /* CoreGraphics.framework */; };
@@ -16,16 +27,24 @@
 		FEECD12A161182DA00EE229E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEECD129161182DA00EE229E /* Default.png */; };
 		FEECD12C161182DA00EE229E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEECD12B161182DA00EE229E /* Default@2x.png */; };
 		FEECD12E161182DA00EE229E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEECD12D161182DA00EE229E /* Default-568h@2x.png */; };
-		FEECD131161182DA00EE229E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECD130161182DA00EE229E /* RootViewController.m */; };
-		FEECD134161182DA00EE229E /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECD133161182DA00EE229E /* DataViewController.m */; };
-		FEECD137161182DA00EE229E /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECD136161182DA00EE229E /* ModelController.m */; };
-		FEECD13A161182DA00EE229E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEECD138161182DA00EE229E /* MainStoryboard_iPhone.storyboard */; };
-		FEECD13D161182DA00EE229E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEECD13B161182DA00EE229E /* MainStoryboard_iPad.storyboard */; };
 		FEECD145161182DB00EE229E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD144161182DB00EE229E /* SenTestingKit.framework */; };
 		FEECD146161182DB00EE229E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD117161182DA00EE229E /* UIKit.framework */; };
 		FEECD147161182DB00EE229E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD119161182DA00EE229E /* Foundation.framework */; };
 		FEECD14F161182DB00EE229E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEECD14D161182DB00EE229E /* InfoPlist.strings */; };
 		FEECD152161182DB00EE229E /* SshTerminalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEECD151161182DB00EE229E /* SshTerminalTests.m */; };
+		FEECD1C91611979B00EE229E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEECD1C81611979B00EE229E /* libz.dylib */; };
+		FEED9594161BD3C7002A259A /* AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEED9593161BD3C7002A259A /* AccessViewController.m */; };
+		FEED959A161C046E002A259A /* ServerAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = FEED9599161C046E002A259A /* ServerAccess.m */; };
+		FEEDB2DA1627F9C100C943A8 /* VirtualTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEDB2D91627F9C100C943A8 /* VirtualTextView.m */; };
+		FEEDB4C7162D4CFB00771794 /* TerminalTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEDB4C6162D4CFB00771794 /* TerminalTextView.m */; };
+		FEEEF9A81637D394001EE9D3 /* escapesequence.c in Sources */ = {isa = PBXBuildFile; fileRef = FEEEF9A71637D394001EE9D3 /* escapesequence.c */; };
+		FEF03B431627CA1600CFDF79 /* NSStringLineAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF03B421627CA1600CFDF79 /* NSStringLineAddition.m */; };
+		FEF193AC16193A9B007F342E /* ssh_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = FEF193AB16193A9B007F342E /* ssh_connection.c */; };
+		FEF193AF16193C0A007F342E /* ori_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = FEF193AE16193C0A007F342E /* ori_thread.c */; };
+		FEF4E61E161D189800061A9D /* TerminalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4E61D161D189800061A9D /* TerminalViewController.m */; };
+		FEF6D90D16156FB400E60D64 /* ori_list.c in Sources */ = {isa = PBXBuildFile; fileRef = FEF6D90C16156FB400E60D64 /* ori_list.c */; };
+		FEFD0F121638D7B2001A0B7D /* TerminalAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFD0F111638D7B2001A0B7D /* TerminalAppView.m */; };
+		FEFD0F151638D838001A0B7D /* AppTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFD0F141638D838001A0B7D /* AppTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +58,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551C88291657971700FB527E /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = "/Users/psg/Downloads/libssh2-for-iOS-master/lib/libssh2.a"; sourceTree = "<absolute>"; };
+		551C882B1657973600FB527E /* libgcrypt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgcrypt.a; path = "/Users/psg/Downloads/libssh2-for-iOS-master/lib/libgcrypt.a"; sourceTree = "<absolute>"; };
+		551C882D1657974800FB527E /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "/Users/psg/Downloads/libssh2-for-iOS-master/lib/libssl.a"; sourceTree = "<absolute>"; };
+		551C882F1657976100FB527E /* libgpg-error.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgpg-error.a"; path = "/Users/psg/Downloads/libssh2-for-iOS-master/lib/libgpg-error.a"; sourceTree = "<absolute>"; };
+		551C88311657978A00FB527E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "/Users/psg/Downloads/libssh2-for-iOS-master/lib/libcrypto.a"; sourceTree = "<absolute>"; };
+		FE106D07161A63A400E95F26 /* ssh_typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssh_typedef.h; sourceTree = "<group>"; };
+		FE106D09161A69B800E95F26 /* ssh_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssh_debug.h; sourceTree = "<group>"; };
+		FE106D0A161A69C400E95F26 /* ssh_debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssh_debug.c; sourceTree = "<group>"; };
+		FE106D0F161AD32A00E95F26 /* data_access_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_access_controller.h; sourceTree = "<group>"; };
+		FE106D10161AD33D00E95F26 /* data_access_controller.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = data_access_controller.c; sourceTree = "<group>"; };
+		FE4CD4CB1630D5C00095D13E /* TerminalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalLog.h; sourceTree = "<group>"; };
+		FE4CD4CD1630D5CC0095D13E /* TerminalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalLog.m; sourceTree = "<group>"; };
+		FE4CD4D21630E0CB0095D13E /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		FE4CD4D31630E0D60095D13E /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		FE4CD4D51630E7D70095D13E /* string_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_misc.h; sourceTree = "<group>"; };
+		FE4CD4D81630E7F70095D13E /* string_misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string_misc.c; sourceTree = "<group>"; };
+		FEE4851A163F8BAC00A6122A /* ssh_terminal_typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssh_terminal_typedef.h; sourceTree = "<group>"; };
+		FEE8CFE016363B44006896F6 /* memoryDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memoryDebug.h; sourceTree = "<group>"; };
+		FEE8CFE216363B51006896F6 /* memoryDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memoryDebug.m; sourceTree = "<group>"; };
 		FEECD113161182DA00EE229E /* SshTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SshTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEECD117161182DA00EE229E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEECD119161182DA00EE229E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,20 +90,38 @@
 		FEECD129161182DA00EE229E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FEECD12B161182DA00EE229E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FEECD12D161182DA00EE229E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FEECD12F161182DA00EE229E /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		FEECD130161182DA00EE229E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FEECD132161182DA00EE229E /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		FEECD133161182DA00EE229E /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		FEECD135161182DA00EE229E /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		FEECD136161182DA00EE229E /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
-		FEECD139161182DA00EE229E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		FEECD13C161182DA00EE229E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FEECD143161182DB00EE229E /* SshTerminalTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SshTerminalTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEECD144161182DB00EE229E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FEECD14C161182DB00EE229E /* SshTerminalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SshTerminalTests-Info.plist"; sourceTree = "<group>"; };
 		FEECD14E161182DB00EE229E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEECD150161182DB00EE229E /* SshTerminalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SshTerminalTests.h; sourceTree = "<group>"; };
 		FEECD151161182DB00EE229E /* SshTerminalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SshTerminalTests.m; sourceTree = "<group>"; };
+		FEECD1C71611959700EE229E /* libssh2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = include/libssh2/libssh2.h; sourceTree = "<group>"; };
+		FEECD1C81611979B00EE229E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FEED9591161BD3B5002A259A /* AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessViewController.h; sourceTree = "<group>"; };
+		FEED9593161BD3C7002A259A /* AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessViewController.m; sourceTree = "<group>"; };
+		FEED9598161C0462002A259A /* ServerAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAccess.h; sourceTree = "<group>"; };
+		FEED9599161C046E002A259A /* ServerAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAccess.m; sourceTree = "<group>"; };
+		FEEDB2D71627F9B200C943A8 /* VirtualTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualTextView.h; sourceTree = "<group>"; };
+		FEEDB2D91627F9C100C943A8 /* VirtualTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualTextView.m; sourceTree = "<group>"; };
+		FEEDB4C5162D4CED00771794 /* TerminalTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalTextView.h; sourceTree = "<group>"; };
+		FEEDB4C6162D4CFB00771794 /* TerminalTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalTextView.m; sourceTree = "<group>"; };
+		FEEEF9A61637D37F001EE9D3 /* escapesequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = escapesequence.h; sourceTree = "<group>"; };
+		FEEEF9A71637D394001EE9D3 /* escapesequence.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = escapesequence.c; sourceTree = "<group>"; };
+		FEF03B3B1627AAEE00CFDF79 /* NSStringLineAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringLineAddition.h; sourceTree = "<group>"; };
+		FEF03B421627CA1600CFDF79 /* NSStringLineAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringLineAddition.m; sourceTree = "<group>"; };
+		FEF193AA16193A8C007F342E /* ssh_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssh_connection.h; sourceTree = "<group>"; };
+		FEF193AB16193A9B007F342E /* ssh_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssh_connection.c; sourceTree = "<group>"; };
+		FEF193AD16193BFE007F342E /* ori_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ori_thread.h; sourceTree = "<group>"; };
+		FEF193AE16193C0A007F342E /* ori_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ori_thread.c; sourceTree = "<group>"; };
+		FEF4E61C161D188900061A9D /* TerminalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalViewController.h; sourceTree = "<group>"; };
+		FEF4E61D161D189800061A9D /* TerminalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalViewController.m; sourceTree = "<group>"; };
+		FEF6D90A16156FA600E60D64 /* ori_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ori_list.h; sourceTree = "<group>"; };
+		FEF6D90C16156FB400E60D64 /* ori_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ori_list.c; sourceTree = "<group>"; };
+		FEFD0F0F1638D7A1001A0B7D /* TerminalAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalAppView.h; sourceTree = "<group>"; };
+		FEFD0F111638D7B2001A0B7D /* TerminalAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalAppView.m; sourceTree = "<group>"; };
+		FEFD0F131638D82D001A0B7D /* AppTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTextView.h; sourceTree = "<group>"; };
+		FEFD0F141638D838001A0B7D /* AppTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +129,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551C88321657978A00FB527E /* libcrypto.a in Frameworks */,
+				551C88301657976100FB527E /* libgpg-error.a in Frameworks */,
+				551C882E1657974800FB527E /* libssl.a in Frameworks */,
+				551C882C1657973600FB527E /* libgcrypt.a in Frameworks */,
+				551C882A1657971700FB527E /* libssh2.a in Frameworks */,
+				FEECD1C91611979B00EE229E /* libz.dylib in Frameworks */,
 				FEECD118161182DA00EE229E /* UIKit.framework in Frameworks */,
 				FEECD11A161182DA00EE229E /* Foundation.framework in Frameworks */,
 				FEECD11C161182DA00EE229E /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +154,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55BCEB6F1661B73C00EFE173 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				FEECD126161182DA00EE229E /* AppDelegate.h */,
+				FEECD127161182DA00EE229E /* AppDelegate.m */,
+				FEED9591161BD3B5002A259A /* AccessViewController.h */,
+				FEED9593161BD3C7002A259A /* AccessViewController.m */,
+				FEED9598161C0462002A259A /* ServerAccess.h */,
+				FEED9599161C046E002A259A /* ServerAccess.m */,
+				FEF4E61C161D188900061A9D /* TerminalViewController.h */,
+				FEF4E61D161D189800061A9D /* TerminalViewController.m */,
+				FEEDB2D71627F9B200C943A8 /* VirtualTextView.h */,
+				FEEDB2D91627F9C100C943A8 /* VirtualTextView.m */,
+				FEEDB4C5162D4CED00771794 /* TerminalTextView.h */,
+				FEEDB4C6162D4CFB00771794 /* TerminalTextView.m */,
+				FEFD0F0F1638D7A1001A0B7D /* TerminalAppView.h */,
+				FEFD0F111638D7B2001A0B7D /* TerminalAppView.m */,
+				FEFD0F131638D82D001A0B7D /* AppTextView.h */,
+				FEFD0F141638D838001A0B7D /* AppTextView.m */,
+				FE4CD4CB1630D5C00095D13E /* TerminalLog.h */,
+				FE4CD4CD1630D5CC0095D13E /* TerminalLog.m */,
+			);
+			name = Terminal;
+			sourceTree = "<group>";
+		};
+		55BCEB701661B83800EFE173 /* ssh */ = {
+			isa = PBXGroup;
+			children = (
+				FEF193AA16193A8C007F342E /* ssh_connection.h */,
+				FEF193AB16193A9B007F342E /* ssh_connection.c */,
+			);
+			name = ssh;
+			sourceTree = "<group>";
+		};
+		55BCEB711661B85500EFE173 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				55BCEB751661E65500EFE173 /* debug */,
+				55BCEB731661B86B00EFE173 /* Objective-C */,
+				55BCEB721661B86400EFE173 /* C */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
+		55BCEB721661B86400EFE173 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FEEEF9A61637D37F001EE9D3 /* escapesequence.h */,
+				FEEEF9A71637D394001EE9D3 /* escapesequence.c */,
+				FE4CD4D51630E7D70095D13E /* string_misc.h */,
+				FE4CD4D81630E7F70095D13E /* string_misc.c */,
+				FEF193AD16193BFE007F342E /* ori_thread.h */,
+				FEF193AE16193C0A007F342E /* ori_thread.c */,
+				FE106D0F161AD32A00E95F26 /* data_access_controller.h */,
+				FE106D10161AD33D00E95F26 /* data_access_controller.c */,
+				FEF6D90A16156FA600E60D64 /* ori_list.h */,
+				FEF6D90C16156FB400E60D64 /* ori_list.c */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		55BCEB731661B86B00EFE173 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				FEF03B3B1627AAEE00CFDF79 /* NSStringLineAddition.h */,
+				FEF03B421627CA1600CFDF79 /* NSStringLineAddition.m */,
+				FE4CD4D21630E0CB0095D13E /* Queue.h */,
+				FE4CD4D31630E0D60095D13E /* Queue.m */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		55BCEB741661E62A00EFE173 /* typedef */ = {
+			isa = PBXGroup;
+			children = (
+				FE106D07161A63A400E95F26 /* ssh_typedef.h */,
+				FEE4851A163F8BAC00A6122A /* ssh_terminal_typedef.h */,
+			);
+			name = typedef;
+			sourceTree = "<group>";
+		};
+		55BCEB751661E65500EFE173 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				FE106D09161A69B800E95F26 /* ssh_debug.h */,
+				FE106D0A161A69C400E95F26 /* ssh_debug.c */,
+				FEE8CFE016363B44006896F6 /* memoryDebug.h */,
+				FEE8CFE216363B51006896F6 /* memoryDebug.m */,
+			);
+			name = debug;
+			sourceTree = "<group>";
+		};
 		FEECD108161182DA00EE229E = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +268,12 @@
 		FEECD116161182DA00EE229E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				551C88311657978A00FB527E /* libcrypto.a */,
+				551C882F1657976100FB527E /* libgpg-error.a */,
+				551C882D1657974800FB527E /* libssl.a */,
+				551C882B1657973600FB527E /* libgcrypt.a */,
+				551C88291657971700FB527E /* libssh2.a */,
+				FEECD1C81611979B00EE229E /* libz.dylib */,
 				FEECD117161182DA00EE229E /* UIKit.framework */,
 				FEECD119161182DA00EE229E /* Foundation.framework */,
 				FEECD11B161182DA00EE229E /* CoreGraphics.framework */,
@@ -125,16 +285,10 @@
 		FEECD11D161182DA00EE229E /* SshTerminal */ = {
 			isa = PBXGroup;
 			children = (
-				FEECD126161182DA00EE229E /* AppDelegate.h */,
-				FEECD127161182DA00EE229E /* AppDelegate.m */,
-				FEECD12F161182DA00EE229E /* RootViewController.h */,
-				FEECD130161182DA00EE229E /* RootViewController.m */,
-				FEECD132161182DA00EE229E /* DataViewController.h */,
-				FEECD133161182DA00EE229E /* DataViewController.m */,
-				FEECD135161182DA00EE229E /* ModelController.h */,
-				FEECD136161182DA00EE229E /* ModelController.m */,
-				FEECD138161182DA00EE229E /* MainStoryboard_iPhone.storyboard */,
-				FEECD13B161182DA00EE229E /* MainStoryboard_iPad.storyboard */,
+				55BCEB741661E62A00EFE173 /* typedef */,
+				55BCEB711661B85500EFE173 /* misc */,
+				55BCEB701661B83800EFE173 /* ssh */,
+				55BCEB6F1661B73C00EFE173 /* Terminal */,
 				FEECD11E161182DA00EE229E /* Supporting Files */,
 			);
 			path = SshTerminal;
@@ -143,6 +297,7 @@
 		FEECD11E161182DA00EE229E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FEECD1C71611959700EE229E /* libssh2.h */,
 				FEECD11F161182DA00EE229E /* SshTerminal-Info.plist */,
 				FEECD120161182DA00EE229E /* InfoPlist.strings */,
 				FEECD123161182DA00EE229E /* main.m */,
@@ -248,8 +403,6 @@
 				FEECD12A161182DA00EE229E /* Default.png in Resources */,
 				FEECD12C161182DA00EE229E /* Default@2x.png in Resources */,
 				FEECD12E161182DA00EE229E /* Default-568h@2x.png in Resources */,
-				FEECD13A161182DA00EE229E /* MainStoryboard_iPhone.storyboard in Resources */,
-				FEECD13D161182DA00EE229E /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +439,24 @@
 			files = (
 				FEECD124161182DA00EE229E /* main.m in Sources */,
 				FEECD128161182DA00EE229E /* AppDelegate.m in Sources */,
-				FEECD131161182DA00EE229E /* RootViewController.m in Sources */,
-				FEECD134161182DA00EE229E /* DataViewController.m in Sources */,
-				FEECD137161182DA00EE229E /* ModelController.m in Sources */,
+				FEF6D90D16156FB400E60D64 /* ori_list.c in Sources */,
+				FEF193AC16193A9B007F342E /* ssh_connection.c in Sources */,
+				FEF193AF16193C0A007F342E /* ori_thread.c in Sources */,
+				FE106D0B161A69C400E95F26 /* ssh_debug.c in Sources */,
+				FE106D11161AD33D00E95F26 /* data_access_controller.c in Sources */,
+				FEED9594161BD3C7002A259A /* AccessViewController.m in Sources */,
+				FEED959A161C046E002A259A /* ServerAccess.m in Sources */,
+				FEF4E61E161D189800061A9D /* TerminalViewController.m in Sources */,
+				FEF03B431627CA1600CFDF79 /* NSStringLineAddition.m in Sources */,
+				FEEDB2DA1627F9C100C943A8 /* VirtualTextView.m in Sources */,
+				FEEDB4C7162D4CFB00771794 /* TerminalTextView.m in Sources */,
+				FE4CD4CE1630D5CC0095D13E /* TerminalLog.m in Sources */,
+				FE4CD4D41630E0D60095D13E /* Queue.m in Sources */,
+				FE4CD4D91630E7F70095D13E /* string_misc.c in Sources */,
+				FEE8CFE316363B52006896F6 /* memoryDebug.m in Sources */,
+				FEEEF9A81637D394001EE9D3 /* escapesequence.c in Sources */,
+				FEFD0F121638D7B2001A0B7D /* TerminalAppView.m in Sources */,
+				FEFD0F151638D838001A0B7D /* AppTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,22 +487,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FEECD138161182DA00EE229E /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEECD139161182DA00EE229E /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		FEECD13B161182DA00EE229E /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEECD13C161182DA00EE229E /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		FEECD14D161182DB00EE229E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +504,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -368,7 +520,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,7 +532,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -389,7 +541,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,9 +552,28 @@
 		FEECD156161182DB00EE229E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SshTerminal/SshTerminal-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TARGET_OS_MAC=1",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TARGET_OS_MAC=1",
+					"_SSH_DEBUG=1",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "include/**";
 				INFOPLIST_FILE = "SshTerminal/SshTerminal-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../testenv/x2on-libssh2-for-iOS-f45b983/lib\"",
+					"\"/Users/psg/Downloads/libssh2-for-iOS-master/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,9 +582,17 @@
 		FEECD157161182DB00EE229E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SshTerminal/SshTerminal-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "include/**";
 				INFOPLIST_FILE = "SshTerminal/SshTerminal-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../testenv/x2on-libssh2-for-iOS-f45b983/lib\"",
+					"\"/Users/psg/Downloads/libssh2-for-iOS-master/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,6 +651,7 @@
 				FEECD157161182DB00EE229E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEECD158161182DB00EE229E /* Build configuration list for PBXNativeTarget "SshTerminalTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +660,7 @@
 				FEECD15A161182DB00EE229E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
