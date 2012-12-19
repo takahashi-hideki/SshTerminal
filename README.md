@@ -2,7 +2,8 @@ SshTerminal
 ===========
 
 SshTerminal is ssh client app for iPad. This version is test version, ssh connection api. 
-This version supported ssh server OS is MACOSX. 
+This version supported ssh server OS is MACOSX. If you use this api, you must install "libssh2",
+with openssl and libcrypt.
 
 How to use
 ----------
